@@ -1,4 +1,8 @@
 import './App.css';
+import library from './images/library.png'
+import sackboy from './images/sackboy.png'
+import spiderman from './images/spiderman.png'
+import assassins from './images/assassins.png'
 
 
 function App() {
@@ -22,7 +26,7 @@ function App() {
             </div>
             <div className="promode">
               <h3>Get Premium Membership.</h3>
-              <img src="./images/library.png" alt=""/>
+              <img src={library} alt=""/>
             </div>
           </div>
           <div className="games">
@@ -35,13 +39,17 @@ function App() {
             </div>
             <div className="cards">
               <div className="card">
-                <h3>Assassins Creed</h3>
+                <img className="img" src={assassins}/>
+                <h3 className="htag">Assassins Creed</h3>
+                
               </div>
               <div className="card">
-              <h3>Call of Duty</h3>
+                <img className="img"src={sackboy}/>
+                <h3 className="htag">SackBoy</h3>
               </div>
               <div className="card">
-              <h3>Need for Speed</h3>
+                <img className="img"src={spiderman}/>
+                <h3 className="htag">Spiderman: Miles Morales</h3>
               </div>
             </div>
           </div>

@@ -114,9 +114,16 @@
   );
   border-radius: 25px;
   width: 90%;
+  display: flex;
 }
 
 .inp {
   border-radius: 20px;
   border: none;
+  height: 20%;
+  width: 45%;
+}
+
+.htag {
+  margin-left: 10px;
 }
