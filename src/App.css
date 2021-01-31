@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.main {
   min-height: 100vh;
+  background: linear-gradient(to top right, #65dfc9, #6cdbeb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sec {
+  min-height: 80vh;
+  background: white;
+  width: 60%;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.2)
+  );
+  z-index: 3;
+  border-radius: 25px;
+  backdrop-filter: blur(1rem);
+  box-shadow: 1px 3px 18px lightskyblue;
+  display: flex;
+}
+
+.c1 {
+  position: absolute;
+  top: 5%;
+  right: 15%;
+  box-shadow: 1px 3px 18px lightskyblue;
+}
+
+.c2 {
+  position: absolute;
+  bottom: 5%;
+  left: 15%;
+  box-shadow: 1px 3px 18px lightskyblue;
+}
+
+.circle {
+  background: linear-gradient(
+    to top right,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.5)
+  );
+  border-radius: 50%;
+  height: 12rem;
+  width: 12rem;
+}
+
+.dashboard {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.4)
+  );
+  border-radius: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+.games {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.promode {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #65dfc9;
+  border-radius: 25px;
+  width: 80%;
+  height: 20%;
+}
+
+.search {
+  flex: 1;
+  display: flex;
+}
+
+.empty {
+  height: 100%;
+  width: 50%;
+  flex: 1;
+}
+
+.search-bar {
+  flex: 4;
+}
+
+.cards {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.4)
+  );
+  border-radius: 25px;
+  width: 90%;
+}
+
+.inp {
+  border-radius: 20px;
+  border: none;
 }
